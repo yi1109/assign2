@@ -185,7 +185,7 @@ void keyPressed() {
     else if (keyCode == RIGHT){frogX += 32;}
     else if (keyCode == LEFT){frogX -= 32;}
 }  
-    if(key==ENTER ){
+    if(key==ENTER && (gameState == GAME_START||gameState == GAME_WIN||gameState == GAME_LOSE) ){
       gameState = GAME_RUN;
       life=3;
       frogX = frogInitX;
